@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TechPro Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+       <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="brand-wrapper">
+                    <i class="bi bi-cpu-fill"></i>
+                    <span>TechPro</span>
+                    <span class="text-gradient">Solutions</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-house-door"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="services.html" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-gear"></i> Services
+                        </a>
+                        <ul class="dropdown-menu animated fadeInUp">
+                            <li><a class="dropdown-item" href="services.html#web">Web Development</a></li>
+                            <li><a class="dropdown-item" href="services.html#cloud">Cloud Solutions</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">
+                            <i class="bi bi-grid"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            <i class="bi bi-journal-text"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="../index.html#contact">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="hero-backdrop"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-4">
+                            <i class="bi bi-trophy"></i>
+                            <span>Award-Winning Projects</span>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Innovative Solutions</span>
+                            <span>That Drive Success</span>
+                        </h1>
+                        <p class="hero-description">
+                            Explore our diverse portfolio of digital transformations and technological breakthroughs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="hero-image-wrapper">
+                            <div class="floating-elements">
+                                <div class="tech-card" data-tech="web">
+                                    <i class="bi bi-code-square"></i>
+                                    <span>Web Development</span>
+                                </div>
+                                <div class="tech-card" data-tech="mobile">
+                                    <i class="bi bi-phone"></i>
+                                    <span>Mobile Apps</span>
+                                </div>
+                                <div class="tech-card" data-tech="cloud">
+                                    <i class="bi bi-cloud"></i>
+                                    <span>Cloud Solutions</span>
+                                </div>
+                            </div>
+                            <div class="hero-sphere">
+                                <div class="sphere-overlay"></div>
+                                <div class="sphere-wireframe"></div>
+                                <div class="sphere-glow"></div>
+                            </div>
+                            <div class="stats-cards">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="bi bi-trophy"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <span class="stat-value">98%</</span>
+                                        <span class="stat-label">Success Rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- projects -->
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Our Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="text-center mb-4">
+                    <button class="project-filter-btn active" data-filter="all">All</button>
+                    <button class="project-filter-btn" data-filter="web">Web</button>
+                    <button class="project-filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="project-filter-btn" data-filter="cloud">Cloud</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Web Project -->
+                    <div class="project-card visible" data-category="web">
+                        <div class="project-image">
+                            <img src="images/projects/ecommerce.jpeg" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>E-Commerce Platform</h4>
+                                    <p>Modern online shopping solution</p>
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">WEB</div>
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-featured online store with inventory management</p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="bi bi-code-square"></i> React</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> Node.js</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Project -->
+                    <div class="project-card visible" data-category="mobile">
+                        <div class="project-image">
+                            <img src="images/projects/banking.jpeg" alt="Mobile Banking App">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Mobile Banking</h4>
+                                    <p>Secure banking solution</p>
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">MOBILE</div>
+                            <h3>Mobile Banking App</h3>
+                            <p>Secure mobile banking with biometric authentication</p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="bi bi-code-square"></i> React Native</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Project -->
+                    <div class="project-card visible" data-category="cloud">
+                        <div class="project-image">
+                            <img src="images/projects/cloud.jpeg" alt="Cloud Migration">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Cloud Infrastructure</h4>
+                                    <p>Enterprise cloud migration</p>
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">CLOUD</div>
+                            <h3>Cloud Migration</h3>
+                            <p>Enterprise-scale cloud infrastructure migration</p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="bi bi-code-square"></i> AWS</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects end -->
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Success Stories</span>
+                <h2 class="section-title">Case Studies</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Case Study 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <!-- Update image paths with fallback -->
+                            <img 
+                                src="../images/case-studies/ecommerce-case.jpg" 
+                                alt="E-commerce Case Study"
+                                onerror="this.src='https://via.placeholder.com/400x300?text=E-commerce+Case+Study'"
+                            >
+                            <div class="case-study-badge">E-commerce</div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Global E-commerce Platform</h3>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <h4>300%</h4>
+                                    <p>Revenue Growth</p>
+                                </div>
+                                <div class="metric">
+                                    <h4>1M+</h4>
+                                    <p>Active Users</p>
+                                </div>
+                            </div>
+                            <p class="case-description">Transformed traditional retail business into a global e-commerce platform.</p>
+                            <a href="#" class="btn btn-outline-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <!-- Update image paths with fallback -->
+                            <img 
+                                src="../images/case-studies/healthcare-case.jpg" 
+                                alt="Healthcare Case Study"
+                                onerror="this.src='https://via.placeholder.com/400x300?text=Healthcare+Case+Study'"
+                            >
+                            <div class="case-study-badge">Healthcare</div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Healthcare Analytics Platform</h3>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <h4>45%</h4>
+                                    <p>Cost Reduction</p>
+                                </div>
+                                <div class="metric">
+                                    <h4>98%</h4>
+                                    <p>Accuracy Rate</p>
+                                </div>
+                            </div>
+                            <p class="case-description">AI-powered healthcare analytics solution for patient care optimization.</p>
+                            <a href="#" class="btn btn-outline-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <!-- Update image paths with fallback -->
+                            <img 
+                                src="../images/case-studies/fintech-case.jpg" 
+                                alt="Fintech Case Study"
+                                onerror="this.src='https://via.placeholder.com/400x300?text=Fintech+Case+Study'"
+                            >
+                            <div class="case-study-badge">Fintech</div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Digital Banking Solution</h3>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <h4>5M+</h4>
+                                    <p>Users</p>
+                                </div>
+                                <div class="metric">
+                                    <h4>60%</h4>
+                                    <p>Cost Savings</p>
+                                </div>
+                            </div>
+                            <p class="case-description">Next-generation digital banking platform with AI-driven features.</p>
+                            <a href="#" class="btn btn-outline-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Client Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center">
+                            <div class="testimonial-image">
+                                <img src="../images/testimonials/client1.jpg" alt="Client 1" class="rounded-circle">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text">"TechPro Solutions transformed our business with their innovative solutions. Their team's expertise and dedication were exceptional."</p>
+                                <h4 class="client-name">Sarah Johnson</h4>
+                                <p class="client-position">CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center">
+                            <div class="testimonial-image">
+                                <img src="../images/testimonials/client2.jpg" alt="Client 2" class="rounded-circle">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <p class="testimonial-text">"Outstanding service and remarkable results. The team went above and beyond our expectations."</p>
+                                <h4 class="client-name">Michael Chang</h4>
+                                <p class="client-position">CTO, InnovateX</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center">
+                            <div class="testimonial-image">
+                                <img src="../images/testimonials/client3.jpg" alt="Client 3" class="rounded-circle">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text">"Professional, responsive, and delivered exactly what we needed. Highly recommend their services!"</p>
+                                <h4 class="client-name">Emily Martinez</h4>
+                                <p class="client-position">Product Manager, FutureScale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-pattern"></div>
+        
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-intro">
+                            <div class="footer-logo">
+                                <i class="bi bi-cpu-fill"></i>
+                                <span class="logo-text">TechPro</span>
+                            </div>
+                            <p>Empowering businesses through innovative technology solutions and digital transformation strategies.</p>
+                            <div class="footer-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div class="location-info">
+                                    <h4>Our Office</h4>
+                                    <p>Arc Cyberjaya 11<br>Unit B-07-11<br>Cyberjaya, Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <a href="tel:+601111600934" class="contact-button">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <span>+60 111 1600 934</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-navigation">
+                            <h3>Navigation</h3>
+                            <ul class="footer-nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-solutions">
+                            <h3>Solutions</h3>
+                            <ul class="footer-nav">
+                                <li><a href="#web">Web Development</a></li>
+                                <li><a href="#cloud">Cloud Solutions</a></li>
+                                <li><a href="#mobile">Mobile Apps</a></li>
+                                <li><a href="#ai">AI & ML</a></li>
+                                <li><a href="#security">Cybersecurity</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h3>Connect With Us</h3>
+                            <p>Follow us on social media and stay updated with the latest technology trends.</p>
+                            <div class="social-grid">
+                                <a href="#" class="social-item" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="newsletter-box">
+                                <h4>Newsletter</h4>
+                                <form class="newsletter-form">
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Enter your email" required>
+                                        <button type="submit" class="btn-glow">
+                                            <i class="bi bi-send-fill"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechPro Solutions. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Privacy Policy</a>
+                        <span class="divider"></span>
+                        <a href="#terms">Terms of Service</a>
+                        <span class="divider"></span>
+                        <a href="#cookies">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/portfolio.js"></script>
+    <script type="module" src="../js/caseStudies.js"></script>
+</body>
+</html>

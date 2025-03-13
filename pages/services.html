@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - TechPro Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/services.css">
+</head>
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="brand-wrapper">
+                    <i class="bi bi-cpu-fill"></i>
+                    <span>TechPro</span>
+                    <span class="text-gradient">Solutions</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-house-door"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-gear"></i> Services
+                        </a>
+                        <ul class="dropdown-menu animated fadeInUp">
+                            <li><a class="dropdown-item" href="services.html#web">Web Development</a></li>
+                            <li><a class="dropdown-item" href="services.html#cloud">Cloud Solutions</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">
+                            <i class="bi bi-grid"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            <i class="bi bi-journal-text"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="../index.html#contact">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-4">
+                            <i class="bi bi-stars"></i>
+                            <span>Premier Tech Services</span>
+                        </div>
+                        <h1 class="hero-title mb-4">
+                            <span class="d-block">Transformative</span>
+                            <span class="gradient-text">Digital Solutions</span>
+                            <span class="d-block">For Your Business</span>
+                        </h1>
+                        <p class="hero-description mb-5">
+                            Empowering businesses with cutting-edge technology solutions and innovative strategies for digital transformation.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#services" class="btn btn-primary btn-lg me-3">
+                                Explore Services <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                Get Started <i class="bi bi-rocket-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="service-illustration">
+                            <!-- Main Circle -->
+                            <svg class="services-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Background Circle -->
+                                <circle cx="250" cy="250" r="200" fill="rgba(255,255,255,0.02)" />
+                                <circle cx="250" cy="250" r="180" fill="rgba(255,255,255,0.04)" />
+                                
+                                <!-- Orbital Paths -->
+                                <circle cx="250" cy="250" r="160" fill="none" stroke="rgba(255,255,255,0.1)" stroke-dasharray="4,4" class="orbital-path" />
+                                <circle cx="250" cy="250" r="120" fill="none" stroke="rgba(255,255,255,0.1)" stroke-dasharray="4,4" class="orbital-path" />
+                                
+                                <!-- Service Icons -->
+                                <g class="service-icon-web" transform="translate(360,250)">
+                                    <circle r="25" fill="rgba(77,124,255,0.2)" />
+                                    <path d="M-10 0 L10 0 M0 -10 L0 10" stroke="white" stroke-width="2" />
+                                </g>
+                                
+                                <g class="service-icon-mobile" transform="translate(250,140)">
+                                    <circle r="25" fill="rgba(0,255,135,0.2)" />
+                                    <rect x="-8" y="-12" width="16" height="24" rx="2" stroke="white" fill="none" stroke-width="2" />
+                                </g>
+                                
+                                <g class="service-icon-cloud" transform="translate(140,250)">
+                                    <circle r="25" fill="rgba(255,77,124,0.2)" />
+                                    <path d="M-10 5 Q-15 5 -15 0 Q-15 -10 -5 -10 Q-5 -15 0 -15 Q10 -15 10 -5 Q15 -5 15 0 Q15 5 10 5 Z" 
+                                          stroke="white" fill="none" stroke-width="2" />
+                                </g>
+                                
+                                <!-- Connecting Lines -->
+                                <path d="M250 250 L360 250" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                                <path d="M250 250 L250 140" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                                <path d="M250 250 L140 250" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                                
+                                <!-- Center Circle -->
+                                <circle cx="250" cy="250" r="40" fill="url(#gradient)" class="center-circle" />
+                                <circle cx="250" cy="250" r="35" fill="rgba(255,255,255,0.1)" />
+                                
+                                <!-- Gradient Definition -->
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4d7cff" />
+                                        <stop offset="100%" style="stop-color:#00ff87" />
+                                    </linearGradient>
+                                </defs>
+                                
+                                <!-- Floating Particles -->
+                                <g class="particles">
+                                    <circle cx="300" cy="200" r="3" fill="white" class="particle" />
+                                    <circle cx="200" cy="300" r="2" fill="white" class="particle" />
+                                    <circle cx="350" cy="350" r="2" fill="white" class="particle" />
+                                    <circle cx="150" cy="150" r="3" fill="white" class="particle" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="services-grid py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Our Expertise</span>
+                <h2 class="section-title">Comprehensive Tech Solutions</h2>
+                <div class="section-line"></div>
+                <p class="section-description">Choose from our wide range of professional services</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Web Development -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom web solutions built with cutting-edge technologies.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Responsive Design</li>
+                            <li><i class="bi bi-check2-circle"></i> E-commerce Solutions</li>
+                            <li><i class="bi bi-check2-circle"></i> Progressive Web Apps</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Native and cross-platform mobile applications.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> iOS & Android Apps</li>
+                            <li><i class="bi bi-check2-circle"></i> React Native</li>
+                            <li><i class="bi bi-check2-circle"></i> Flutter Development</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable and secure cloud infrastructure services.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> AWS & Azure</li>
+                            <li><i class="bi bi-check2-circle"></i> Cloud Migration</li>
+                            <li><i class="bi bi-check2-circle"></i> DevOps Services</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Intelligent solutions powered by advanced AI technologies.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Predictive Analytics</li>
+                            <li><i class="bi bi-check2-circle"></i> Natural Language Processing</li>
+                            <li><i class="bi bi-check2-circle"></i> Computer Vision</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Comprehensive security solutions for digital assets.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Threat Detection</li>
+                            <li><i class="bi bi-check2-circle"></i> Security Audits</li>
+                            <li><i class="bi bi-check2-circle"></i> Incident Response</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- IoT Solutions -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-hdd-network"></i>
+                        </div>
+                        <h3>IoT Solutions</h3>
+                        <p>Connected device ecosystems for smart operations.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Smart Sensors</li>
+                            <li><i class="bi bi-check2-circle"></i> Remote Monitoring</li>
+                            <li><i class="bi bi-check2-circle"></i> Data Analytics</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Digital Consulting -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3>Digital Consulting</h3>
+                        <p>Strategic guidance for digital transformation.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Technology Assessment</li>
+                            <li><i class="bi bi-check2-circle"></i> Digital Strategy</li>
+                            <li><i class="bi bi-check2-circle"></i> Process Optimization</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating engaging and intuitive user experiences.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> User Research</li>
+                            <li><i class="bi bi-check2-circle"></i> Interface Design</li>
+                            <li><i class="bi bi-check2-circle"></i> Usability Testing</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- DevOps Services -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h3>DevOps Services</h3>
+                        <p>Streamlined development and operations workflow.</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> CI/CD Pipeline</li>
+                            <li><i class="bi bi-check2-circle"></i> Infrastructure as Code</li>
+                            <li><i class="bi bi-check2-circle"></i> Automation</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">How We Work</span>
+                <h2 class="section-title">Our Development Process</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="process-timeline">
+                <div class="row g-4">
+                    <!-- Discovery & Planning -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-icon">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+                            <h3>Discovery & Planning</h3>
+                            <p>Understanding your needs and creating a detailed project roadmap.</p>
+                            <ul class="step-features">
+                                <li><i class="bi bi-check2-circle"></i> Requirements Analysis</li>
+                                <li><i class="bi bi-check2-circle"></i> Project Scope</li>
+                                <li><i class="bi bi-check2-circle"></i> Timeline Planning</li>
+                            </ul>
+                            <div class="step-arrow">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design & Architecture -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-icon">
+                                <i class="bi bi-pencil-square"></i>
+                            </div>
+                            <h3>Design & Architecture</h3>
+                            <p>Creating the blueprint for your solution with modern design principles.</p>
+                            <ul class="step-features">
+                                <li><i class="bi bi-check2-circle"></i> UI/UX Design</li>
+                                <li><i class="bi bi-check2-circle"></i> System Architecture</li>
+                                <li><i class="bi bi-check2-circle"></i> Tech Stack Selection</li>
+                            </ul>
+                            <div class="step-arrow">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-icon">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <h3>Development</h3>
+                            <p>Building your solution with clean, efficient, and scalable code.</p>
+                            <ul class="step-features">
+                                <li><i class="bi bi-check2-circle"></i> Agile Development</li>
+                                <li><i class="bi bi-check2-circle"></i> Code Reviews</li>
+                                <li><i class="bi bi-check2-circle"></i> Quality Testing</li>
+                            </ul>
+                            <div class="step-arrow">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-icon">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h3>Deployment & Support</h3>
+                            <p>Launching your solution and providing ongoing maintenance.</p>
+                            <ul class="step-features">
+                                <li><i class="bi bi-check2-circle"></i> CI/CD Pipeline</li>
+                                <li><i class="bi bi-check2-circle"></i> Performance Monitoring</li>
+                                <li><i class="bi bi-check2-circle"></i> 24/7 Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="tech-section py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Our Tools</span>
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="section-line"></div>
+                <p class="section-description">We use cutting-edge technologies to deliver exceptional solutions</p>
+            </div>
+
+            <div class="tech-categories">
+                <!-- Frontend Technologies -->
+                <div class="tech-category mb-5">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card" data-mastery="90">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-filetype-html"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">90%</span>
+                                </div>
+                            </div>
+                            <h4>HTML5/CSS3</h4>
+                            <span class="tech-level">Advanced</span>
+                        </div>
+
+                        <div class="tech-card" data-mastery="85">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-filetype-js"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">85%</span>
+                                </div>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <span class="tech-level">Expert</span>
+                        </div>
+
+                        <div class="tech-card" data-mastery="80">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-react"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">80%</span>
+                                </div>
+                            </div>
+                            <h4>React</h4>
+                            <span class="tech-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div class="tech-category mb-5">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card" data-mastery="85">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-nodejs"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">85%</span>
+                                </div>
+                            </div>
+                            <h4>Node.js</h4>
+                            <span class="tech-level">Expert</span>
+                        </div>
+
+                        <div class="tech-card" data-mastery="75">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-database"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">75%</span>
+                                </div>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <span class="tech-level">Advanced</span>
+                        </div>
+
+                        <div class="tech-card" data-mastery="80">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-database-check"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">80%</span>
+                                </div>
+                            </div>
+                            <h4>MySQL</h4>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="tech-category">
+                    <h3 class="category-title">Cloud & DevOps</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card" data-mastery="70">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-aws"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">70%</span>
+                                </div>
+                            </div>
+                            <h4>AWS</h4>
+                            <span class="tech-level">Advanced</span>
+                        </div>
+
+                        <div class="tech-card" data-mastery="75">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-git"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">75%</span>
+                                </div>
+                            </div>
+                            <h4>Git/GitHub</h4>
+                            <span class="tech-level">Expert</span>
+                        </div>
+
+                        <div class="tech-card" data-mastery="65">
+                            <div class="tech-icon-wrap">
+                                <i class="bi bi-docker"></i>
+                                <div class="tech-progress">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="mastery-value">65%</span>
+                                </div>
+                            </div>
+                            <h4>Docker</h4>
+                            <span class="tech-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as about.html) -->
+    <footer class="modern-footer">
+        <div class="footer-pattern"></div>
+        
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-intro">
+                            <div class="footer-logo">
+                                <i class="bi bi-cpu-fill"></i>
+                                <span class="logo-text">TechPro</span>
+                            </div>
+                            <p>Empowering businesses through innovative technology solutions and digital transformation strategies.</p>
+                            <div class="footer-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div class="location-info">
+                                    <h4>Our Office</h4>
+                                    <p>Arc Cyberjaya 11<br>Unit B-07-11<br>Cyberjaya, Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <a href="tel:+601111600934" class="contact-button">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <span>+60 111 1600 934</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-navigation">
+                            <h3>Navigation</h3>
+                            <ul class="footer-nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-solutions">
+                            <h3>Solutions</h3>
+                            <ul class="footer-nav">
+                                <li><a href="#web">Web Development</a></li>
+                                <li><a href="#cloud">Cloud Solutions</a></li>
+                                <li><a href="#mobile">Mobile Apps</a></li>
+                                <li><a href="#ai">AI & ML</a></li>
+                                <li><a href="#security">Cybersecurity</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h3>Connect With Us</h3>
+                            <p>Follow us on social media and stay updated with the latest technology trends.</p>
+                            <div class="social-grid">
+                                <a href="#" class="social-item" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="newsletter-box">
+                                <h4>Newsletter</h4>
+                                <form class="newsletter-form">
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Enter your email" required>
+                                        <button type="submit" class="btn-glow">
+                                            <i class="bi bi-send-fill"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechPro Solutions. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Privacy Policy</a>
+                        <span class="divider"></span>
+                        <a href="#terms">Terms of Service</a>
+                        <span class="divider"></span>
+                        <a href="#cookies">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/services.js"></script>
+</body>
+</html>

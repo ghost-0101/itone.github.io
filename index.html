@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+        
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <div class="brand-wrapper">
+                    <i class="bi bi-cpu-fill"></i>
+                    <span>TechPro</span>
+                    <span class="text-gradient">Solutions</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">
+                            <i class="bi bi-house-door"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-gear"></i> Services
+                        </a>
+                        <ul class="dropdown-menu animated fadeInUp">
+                            <li><a class="dropdown-item" href="./pages/services.html#web">Web Development</a></li>
+                            <li><a class="dropdown-item" href="./pages/services.html#cloud">Cloud Solutions</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./pages/services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/portfolio.html">
+                            <i class="bi bi-grid"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/blog.html">
+                            <i class="bi bi-journal-text"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="#contact">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero position-relative overflow-hidden">
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content fade-in-left">
+                    <div class="typing-container mb-4">
+                        <span class="hero-badge" id="typing-text"></span>
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4 text-white glowing-text">
+                        Transform Your Digital Future With
+                        <span class="text-rotator">
+                            <span class="rotate-text active">Innovation</span>
+                            <span class="rotate-text">Technology</span>
+                            <span class="rotate-text">Excellence</span>
+                        </span>
+                    </h1>
+                    <p class="lead mb-5 text-white-50 animate-on-scroll">Empowering businesses through cutting-edge technology solutions.</p>
+                    <div class="hero-buttons d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-glow btn-light btn-lg rounded-pill">
+                            Get Started 
+                            <i class="bi bi-arrow-right ms-2 btn-icon"></i>
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg rounded-pill btn-hover-slide">
+                            Explore Services
+                            <i class="bi bi-grid ms-2"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5">
+                        <div class="row g-4">
+                            <div class="col-6 col-md-4">
+                                <div class="stat-card text-white">
+                                    <div class="stat-number counter" data-target="500">0</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="stat-card text-white">
+                                    <div class="stat-number counter" data-target="200">0</div>
+                                    <div class="stat-label">Happy Clients</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <div class="tech-illustration">
+                        <div class="floating-element">
+                            <img src="images/hero-tech.svg" alt="Technology Innovation" class="img-fluid">
+                            <div class="tech-circles"></div>
+                        </div>
+                        <div class="tech-orbits">
+                            <div class="orbit orbit-1"></div>
+                            <div class="orbit orbit-2"></div>
+                            <div class="orbit orbit-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- services  -->
+
+        <section id="services" class="services-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">What We Offer</span>
+                    <h2 class="section-title">Our Services</h2>
+                    <div class="section-line"></div>
+                    <p class="section-description">Comprehensive IT solutions tailored to transform your business</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p class="service-description">Custom websites and web applications built with cutting-edge technologies</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check-circle"></i> Responsive Design</li>
+                            <li><i class="bi bi-check-circle"></i> E-Commerce Solutions</li>
+                            <li><i class="bi bi-check-circle"></i> Progressive Web Apps</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="#" class="btn btn-outline-primary rounded-pill">Learn More</a>
+                        </div>
+                        <div class="service-background-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p class="service-description">Seamless cloud migration and management services</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check-circle"></i> Cloud Migration</li>
+                            <li><i class="bi bi-check-circle"></i> AWS & Azure Expertise</li>
+                            <li><i class="bi bi-check-circle"></i> Cloud Security</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="#" class="btn btn-outline-primary rounded-pill">Learn More</a>
+                        </div>
+                        <div class="service-background-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p class="service-description">Comprehensive security solutions to protect your business</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check-circle"></i> Threat Detection</li>
+                            <li><i class="bi bi-check-circle"></i> Data Protection</li>
+                            <li><i class="bi bi-check-circle"></i> Security Audits</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="#" class="btn btn-outline-primary rounded-pill">Learn More</a>
+                        </div>
+                        <div class="service-background-icon">
+                            <i class="bi bi-shield"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services end     -->
+
+        <!-- projects -->
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Our Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="text-center mb-4">
+                    <button class="project-filter-btn active" data-filter="all">All</button>
+                    <button class="project-filter-btn" data-filter="web">Web</button>
+                    <button class="project-filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="project-filter-btn" data-filter="cloud">Cloud</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Web Project -->
+                    <div class="project-card visible" data-category="web">
+                        <div class="project-image">
+                            <img src="images/projects/ecommerce.jpeg" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>E-Commerce Platform</h4>
+                                    <p>Modern online shopping solution</p>
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">WEB</div>
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-featured online store with inventory management</p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="bi bi-code-square"></i> React</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> Node.js</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Project -->
+                    <div class="project-card visible" data-category="mobile">
+                        <div class="project-image">
+                            <img src="images/projects/banking.jpeg" alt="Mobile Banking App">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Mobile Banking</h4>
+                                    <p>Secure banking solution</p>
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">MOBILE</div>
+                            <h3>Mobile Banking App</h3>
+                            <p>Secure mobile banking with biometric authentication</p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="bi bi-code-square"></i> React Native</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Project -->
+                    <div class="project-card visible" data-category="cloud">
+                        <div class="project-image">
+                            <img src="images/projects/cloud.jpeg" alt="Cloud Migration">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Cloud Infrastructure</h4>
+                                    <p>Enterprise cloud migration</p>
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">CLOUD</div>
+                            <h3>Cloud Migration</h3>
+                            <p>Enterprise-scale cloud infrastructure migration</p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="bi bi-code-square"></i> AWS</span>
+                                <span class="tag"><i class="bi bi-code-square"></i> Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects end -->
+
+        <!-- team -->
+
+        <section id="team">
+            <div class="container">
+                <div class="team-section-header">
+                    <span class="section-subtitle">Our People</span>
+                    <h2 class="section-title">Meet Our Expert Team</h2>
+                    <div class="section-line"></div>
+                    <p class="section-description">Dedicated professionals working together to deliver exceptional results</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="images/team/member1.jpeg" alt="John Doe">
+                        </div>
+                        <div class="team-member-content">
+                            <h3>John Doe</h3>
+                            <div class="team-member-role">Technical Director</div>
+                            <p>15+ years of experience in software architecture and development</p>
+                            <div class="team-member-socials">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="images/team/member2.jpeg" alt="Jane Smith">
+                        </div>
+                        <div class="team-member-content">
+                            <h3>Jane Smith</h3>
+                            <div class="team-member-role">Solution Architect</div>
+                            <p>Cloud computing expert with extensive AWS certification</p>
+                            <div class="team-member-socials">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="images/team/member3.jpeg" alt="Mike Johnson">
+                        </div>
+                        <div class="team-member-content">
+                            <h3>Mike Johnson</h3>
+                            <div class="team-member-role">Security Specialist</div>
+                            <p>Cybersecurity expert specializing in enterprise protection</p>
+                            <div class="team-member-socials">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team end -->
+
+        <!-- testimonials -->
+
+        <section id="testimonials" class="testimonials-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">What People Say</span>
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slider-inner row">
+                        <div class="col-md-12">
+                            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="testimonial-card h-100">
+                                            <div class="testimonial-content">
+                                                <div class="testimonial-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <p class="testimonial-text">"The cloud migration service provided by TechPro Solutions transformed our business operations. We saw a 40% improvement in efficiency."</p>
+                                                <div class="testimonial-author">
+                                                    <img src="images/testimonials/client1.jpeg" alt="James Wilson" class="testimonial-avatar">
+                                                    <div class="testimonial-info">
+                                                        <h4>James Wilson</h4>
+                                                        <p>CTO, Global Tech Industries</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="testimonial-card featured h-100">
+                                            <div class="testimonial-content">
+                                                <div class="testimonial-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <p class="testimonial-text">"Implementing TechPro's cybersecurity solutions was a game-changer for our organization. Their security audit was exceptional."</p>
+                                                <div class="testimonial-author">
+                                                    <img src="images/testimonials/client2.jpeg" alt="Sarah Chen" class="testimonial-avatar">
+                                                    <div class="testimonial-info">
+                                                        <h4>Sarah Chen</h4>
+                                                        <p>Security Director, FinTech Solutions</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="testimonial-card h-100">
+                                            <div class="testimonial-content">
+                                                <div class="testimonial-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <p class="testimonial-text">"The custom web application exceeded our expectations. Our customer engagement has increased by 200%."</p>
+                                                <div class="testimonial-author">
+                                                    <img src="images/testimonials/client3.jpeg" alt="Michael Brown" class="testimonial-avatar">
+                                                    <div class="testimonial-info">
+                                                        <h4>Michael Brown</h4>
+                                                        <p>CEO, Digital Marketing Pro</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials end -->
+
+        <!-- features -->
+
+        <section id="features" class="features-section py-5">
+            <div class="container position-relative">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Why Choose Us</span>
+                    <h2 class="section-title">Our Unique Advantages</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-bg"></div>
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock technical support and monitoring for your systems</p>
+                            <div class="feature-hover-content">
+                                <ul>
+                                    <li><i class="bi bi-check2-circle"></i> Instant Response</li>
+                                    <li><i class="bi bi-check2-circle"></i> Dedicated Team</li>
+                                    <li><i class="bi bi-check2-circle"></i> Real-time Monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-particles"></div>
+                    </div>
+
+                    <div class="feature-card active" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-bg"></div>
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Certified Experts</h4>
+                            <p>Team of certified professionals with years of industry experience</p>
+                            <div class="feature-hover-content">
+                                <ul>
+                                    <li><i class="bi bi-check2-circle"></i> AWS Certified</li>
+                                    <li><i class="bi bi-check2-circle"></i> ISO Certified</li>
+                                    <li><i class="bi bi-check2-circle"></i> Industry Leaders</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-particles"></div>
+                    </div>
+
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-bg"></div>
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Scalable Solutions</h4>
+                            <p>Solutions that grow with your business needs</p>
+                            <div class="feature-hover-content">
+                                <ul>
+                                    <li><i class="bi bi-check2-circle"></i> Flexible Architecture</li>
+                                    <li><i class="bi bi-check2-circle"></i> Cloud-Ready</li>
+                                    <li><i class="bi bi-check2-circle"></i> Future-Proof</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-particles"></div>
+                    </div>
+                </div>
+
+                <div class="features-background">
+                    <div class="feature-shape shape-1"></div>
+                    <div class="feature-shape shape-2"></div>
+                    <div class="feature-shape shape-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features end -->
+
+        <!-- case studies -->
+
+        <section id="case-studies" class="case-studies-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5 transform-header">
+                    <span class="section-subtitle shine">Real Success Stories</span>
+                    <h2 class="section-title glow-text">
+                        Digital Transformation 
+                        <span class="highlight-text">Journey</span>
+                    </h2>
+                    <div class="section-line gradient-line"></div>
+                    <p class="section-description">
+                        From vision to reality - explore how we've helped businesses achieve 
+                        <span class="typed-text" data-typed='["digital excellence", "remarkable growth", "market leadership"]'></span>
+                    </p>
+                </div>
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-category-wrapper">
+                                <span class="case-category">FINTECH</span>
+                                <span class="case-duration">6 months</span>
+                            </div>
+                            <h3 class="case-title">Global Banking Transformation</h3>
+                        </div>
+                        
+                        <div class="case-content">
+                            <div class="case-metrics">
+                                <div class="metric-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="metric-text" style="color:white">75%</text>
+                                    </svg>
+                                    <span class="metric-label">Cost Reduction</span>
+                                </div>
+                                <div class="metric-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="metric-text">90%</text>
+                                    </svg>
+                                    <span class="metric-label">Efficiency Gain</span>
+                                </div>
+                            </div>
+
+                            <div class="case-achievements">
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Automated 85% of manual processes</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Reduced transaction time by 90%</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Enhanced security protocols</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="stack-label">Technologies Used:</span>
+                                <div class="stack-badges">
+                                    <span class="tech-badge">
+                                        <img src="images/tech/aws.png" alt="AWS">
+                                        AWS
+                                    </span>
+                                    <span class="tech-badge">
+                                        <img src="images/tech/react.png" alt="React">
+                                        React
+                                    </span>
+                                    <span class="tech-badge">
+                                        <img src="images/tech/node.png" alt="Node.js">
+                                        Node.js
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-footer">
+                            <div class="client-info">
+                                <img src="images/clients/global-bank.png" alt="Global Bank Ltd">
+                                <div class="client-details">
+                                    <h4>Global Bank Ltd</h4>
+                                    <p>Financial Services</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-case-study">
+                                View Full Case Study
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-category-wrapper">
+                                <span class="case-category">E-COMMERCE</span>
+                                <span class="case-duration">4 months</span>
+                            </div>
+                            <h3 class="case-title">Digital Retail Platform</h3>
+                        </div>
+                        
+                        <div class="case-content">
+                            <div class="case-metrics">
+                                <div class="metric-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="metric-text">85%</text>
+                                    </svg>
+                                    <span class="metric-label">Revenue Growth</span>
+                                </div>
+                                <div class="metric-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" stroke-dasharray="95, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="metric-text">95%</text>
+                                    </svg>
+                                    <span class="metric-label">Customer Satisfaction</span>
+                                </div>
+                            </div>
+
+                            <div class="case-achievements">
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>200% increase in online sales</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Mobile app with 50K+ downloads</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>AI-powered recommendation system</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="stack-label">Technologies Used:</span>
+                                <div class="stack-badges">
+                                    <span class="tech-badge">
+                                        <img src="images/tech/react.png" alt="React">
+                                        React Native
+                                    </span>
+                                    <span class="tech-badge">
+                                        <img src="images/tech/python.jpeg" alt="Python">
+                                        Python
+                                    </span>
+                                    <span class="tech-badge">
+                                        <img src="images/tech/aws.png" alt="AWS">
+                                        AWS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-footer">
+                            <div class="client-info">
+                                <img src="images/clients/retail-pro.png" alt="Retail Pro Inc">
+                                <div class="client-details">
+                                    <h4>Retail Pro Inc</h4>
+                                    <p>E-Commerce</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-case-study">
+                                View Full Case Study
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-category-wrapper">
+                                <span class="case-category">HEALTHCARE</span>
+                                <span class="case-duration">8 months</span>
+                            </div>
+                            <h3 class="case-title">Telemedicine Platform</h3>
+                        </div>
+                        
+                        <div class="case-content">
+                            <div class="case-metrics">
+                                <div class="metric-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="metric-text">80%</text>
+                                    </svg>
+                                    <span class="metric-label">Patient Satisfaction</span>
+                                </div>
+                                <div class="metric-circle">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path class="circle-progress" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <text x="18" y="20.35" class="metric-text">70%</text>
+                                    </svg>
+                                    <span class="metric-label">Cost Reduction</span>
+                                </div>
+                            </div>
+
+                            <div class="case-achievements">
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>10,000+ virtual consultations</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>HIPAA compliant system</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Real-time health monitoring</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="stack-label">Technologies Used:</span>
+                                <div class="stack-badges">
+                                    <span class="tech-badge">
+                                        <img src="images/tech/angular.png" alt="Angular">
+                                        Angular
+                                    </span>
+                                    <span class="tech-badge">
+                                        <img src="images/tech/node.png" alt="Node.js">
+                                        Node.js
+                                    </span>
+                                    <span class="tech-badge">
+                                        <img src="images/tech/aws.png" alt="AWS">
+                                        AWS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-footer">
+                            <div class="client-info">
+                                <img src="images/clients/health-tech.jpeg" alt="HealthTech Solutions">
+                                <div class="client-details">
+                                    <h4>HealthTech Solutions</h4>
+                                    <p>Healthcare Technology</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-case-study">
+                                View Full Case Study
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- case studies end -->
+
+        <!-- faq -->
+
+        <section id="faq" class="py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Have Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="accordion custom-accordion" id="faqAccordion">
+                    <div class="accordion-item fade-up">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <i class="bi bi-question-circle me-2"></i>
+                                What industries do you serve?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We serve various industries including:</p>
+                                <ul class="faq-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Finance & Banking</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Healthcare & Medical</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Retail & E-commerce</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Manufacturing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-up">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <i class="bi bi-shield-lock me-2"></i>
+                                How do you ensure data security?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We implement multiple layers of security including:</p>
+                                <ul class="faq-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> End-to-end encryption</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Regular security audits</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Compliance with industry standards</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> 24/7 monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-up">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <i class="bi bi-clock-history me-2"></i>
+                                What is your typical project timeline?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Project timelines vary based on scope and complexity, but typically:
+                                <ul class="faq-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Small projects: 2-4 weeks</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Medium projects: 1-3 months</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Large projects: 3-6 months</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq end -->
+
+        <!-- cta -->
+        <section class="cta-section bg-primary text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-4 mb-3">Ready to Transform Your Business?</h2>
+                        <p class="lead mb-0">Let's discuss how we can help you achieve your goals.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#contact" class="btn btn-light btn-lg rounded-pill">Contact Us Today</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta end -->
+
+        <!-- contact -->
+
+        <section id="contact" class="contact-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Start a Conversation</h2>
+                    <div class="section-line"></div>
+                    <p class="section-description">Reach out to us for a free consultation and let's discuss your project</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="contact-info">
+                            <div class="contact-info-header">
+                                <h3>Contact Information</h3>
+                                <p>Ready to transform your business? Contact us today!</p>
+                            </div>
+                            
+                            <div class="contact-info-content">
+                                <div class="contact-info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <div>
+                                        <h4>Our Location</h4>
+                                        <p>Arc Cyberjaya 11<br>Unit B-07-11<br>Cyberjaya, Malaysia</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <div>
+                                        <h4>Call Us</h4>
+                                        <p>+60 111 1600 934</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <div>
+                                        <h4>Email Us</h4>
+                                        <p>info@techpro.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="contact-form-wrapper">
+                            <form id="contact-form" class="contact-form needs-validation" novalidate>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                            <div class="invalid-feedback">Please enter your name</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                            <div class="invalid-feedback">Please enter a valid email</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                            <label for="phone">Phone Number (Optional)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="service" required>
+                                                <option value="">Select a service</option>
+                                                <option value="web">Web Development</option>
+                                                <option value="mobile">Mobile Development</option>
+                                                <option value="cloud">Cloud Solutions</option>
+                                                <option value="security">Cybersecurity</option>
+                                            </select>
+                                            <label for="service">Service Interest</label>
+                                            <div class="invalid-feedback">Please select a service</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                            <div class="invalid-feedback">Please enter your message</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacy" required>
+                                            <label class="form-check-label" for="privacy">
+                                                I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>
+                                            </label>
+                                            <div class="invalid-feedback">You must agree before submitting</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                                            Send Message <i class="bi bi-send ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map mt-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290621304!2d-122.08375708439278!3d37.42199997982367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614308855785!5m2!1sen!2sus"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact end -->
+
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="modern-footer">
+        <div class="footer-pattern"></div>
+        
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-intro">
+                            <div class="footer-logo">
+                                <i class="bi bi-cpu-fill"></i>
+                                <span class="logo-text">TechPro</span>
+                            </div>
+                            <p>Empowering businesses through innovative technology solutions and digital transformation strategies.</p>
+                            <div class="footer-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div class="location-info">
+                                    <h4>Our Office</h4>
+                                    <p>Arc Cyberjaya 11<br>Unit B-07-11<br>Cyberjaya, Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <a href="tel:+601111600934" class="contact-button">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <span>+60 111 1600 934</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-navigation">
+                            <h3>Navigation</h3>
+                            <ul class="footer-nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-solutions">
+                            <h3>Solutions</h3>
+                            <ul class="footer-nav">
+                                <li><a href="#web">Web Development</a></li>
+                                <li><a href="#cloud">Cloud Solutions</a></li>
+                                <li><a href="#mobile">Mobile Apps</a></li>
+                                <li><a href="#ai">AI & ML</a></li>
+                                <li><a href="#security">Cybersecurity</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h3>Connect With Us</h3>
+                            <p>Follow us on social media and stay updated with the latest technology trends.</p>
+                            <div class="social-grid">
+                                <a href="#" class="social-item" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-item" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="newsletter-box">
+                                <h4>Newsletter</h4>
+                                <form class="newsletter-form">
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Enter your email" required>
+                                        <button type="submit" class="btn-glow">
+                                            <i class="bi bi-send-fill"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechPro Solutions. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Privacy Policy</a>
+                        <span class="divider"></span>
+                        <a href="#terms">Terms of Service</a>
+                        <span class="divider"></span>
+                        <a href="#cookies">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- footer end -->
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
